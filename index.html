@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+</head>
+
+<body>
+<h3>mini-project burn down</h3> 
+<p>
+Cas, Tim and I wanted to play risk but we couldn’t find the board. As we were finishing fashioning a game board from scotch tape and markers we realized we needed cards. I offered to program our needs and Cas counted out the states in each country for me while tim went to put some chicken wings in the oven.  </p>
+
+<p>
+After a few minutes I had what I thought I needed, opened up a terminal and pasted in my deck and player classes into a python console. </p>
+
+<img src = ./Capture1.png>
+
+
+<p>
+Spot the mistake? Well I Didn’t… Cas and Tim were ready to play and I knew that I could generate “cards” from a “deck” and see the resulting hands so we set with the game. I explained that while the country id would behave like a card but the unit type would be random when the card was delt and Cas and Tim had no objections. The game begun.</p>
+
+<img src = ./Capture2.png>
+
+
+<p>
+We played for several turns and the objects seemed to behave well. I even added a little bonus tracker to display the troop bonus for exchanging cards. However when I tried to return Tim’s cards to the deck I realized there was a problem.</p>
+
+<img src = ./Capture3.png>
+
+
+<p>
+This was not great but that was ok, I knew I was flying lose on this one so I told Cas and Tim I needed a minute to fix the card thing and Tim went to get the chicken out the oven. I knew I would need to create new player objects, and I needed to preserve the hands that had already been dealt. </p>
+
+<img src = ./Capture4.png>
+
+
+<p>
+After adding the self argument to cardBack method in player I needed to also add the setHand method. To make the deck cards data correspond to the hands I needed the removeCard function and for convenience removeHand in deck. In the meantime  Tim took a turn and by the time it was my turn again we were ready to go.</p>
+
+<img src=./Capture5.png>
+
+<p>
+I decided to write this all down in the hopes that it can provide people getting started with programming some reassurance that doing the basics will become second nature with practice, and hopefully this example will guide some exploration into python.</p>
+
+<a href="https://stackoverflow.com/questions/1832940/why-is-using-eval-a-bad-practice">EVAL() IS TERRIFYING</a>
+
+</body>
+</html>
